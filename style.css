@@ -7,7 +7,9 @@
 }
 
 
-*, *::before, *::after {
+*, 
+*::before,
+ *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -42,16 +44,18 @@ p {
     margin-bottom: 1.5rem;
 }
 
-button {
+.learn-more {
     width: 9.125rem;
     background-color: var(--veryLightGray);
     border: 2px solid var(--veryLightGray);
     border-radius: 3.125rem;
     padding: 0.875rem 2rem;
     font-weight: 700;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
 }
 
-button:hover {
+.learn-more:hover {
     background-color: inherit;
     color: var(--veryLightGray);
 }
